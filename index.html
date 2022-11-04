@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="/index.js" defer></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="result">
+        <div class="answer"><p class="final_result"></p></div>
+      </div>
+      <div class="clear">
+        <div class="clear_input top_btn"><span>Clear</span></div>
+        <div class="delete top_btn">
+          <span><i class="fa-solid fa-delete-left"></i></span>
+        </div>
+      </div>
+      <form class="buttons">
+        <input class="button" type="button" value="1" onclick="calc(this)" />
+        <input class="button" type="button" value="2" onclick="calc(this)" />
+        <input class="button" type="button" value="3" onclick="calc(this)" />
+        <input
+          class="button op_color"
+          type="button"
+          value="+"
+          onclick="calc(this)"
+        />
+        <input class="button" type="button" value="4" onclick="calc(this)" />
+        <input class="button" type="button" value="5" onclick="calc(this)" />
+        <input class="button" type="button" value="6" onclick="calc(this)" />
+        <input
+          class="button op_color"
+          type="button"
+          value="-"
+          onclick="calc(this)"
+        />
+        <input class="button" type="button" value="7" onclick="calc(this)" />
+        <input class="button" type="button" value="8" onclick="calc(this)" />
+        <input class="button" type="button" value="9" onclick="calc(this)" />
+        <input
+          class="button op_color"
+          type="button"
+          value="*"
+          onclick="calc(this)"
+        />
+        <input class="button" type="button" value="0" onclick="calc(this)" />
+        <input class="button" type="button" value="." onclick="calc(this)" />
+        <input
+          class="button op_color"
+          type="button"
+          value="/"
+          onclick="calc(this)"
+        />
+        <input
+          class="button op_color_equal"
+          type="button"
+          value="="
+          onclick="calculate_final()"
+        />
+      </form>
+    </div>
+  </body>
+</html>
